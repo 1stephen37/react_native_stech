@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id_product": "12",
+      "id_brand": "2",
+      "name": "Samsung Galaxy Z Flip5",
+      "sale_off": 30,
+      "views": "5000",
+      "status": 1,
+      "created_at": "2024-07-06",
+      "updated_at": "2024-07-06",
+      "image": "samsung-z-lip5_green_4GB_128GB_1.webp",
+      "brand_name": "samsung",
+      "memory": "8GB/128GB",
+      "color": "Xanh lá",
+      "price": "25990000"
+    },
+    {
+      "id_product": "7",
+      "id_brand": "1",
+      "name": "iPhone 12 | Chính hãng VN/A",
+      "sale_off": 27,
+      "views": "158",
+      "status": 1,
+      "created_at": "2024-07-06",
+      "updated_at": "2024-07-06",
+      "image": "iphone12_64GB-green2_241.webp",
+      "brand_name": "apple",
+      "memory": "64GB",
+      "color": "Xanh lá",
+      "price": "15990000"
+    }
+  ],
+  "brands": [
+    {
+      "id_brand": "1",
+      "name": "apple",
+      "description": null,
+      "logo": "logo-iphone-220x48.png",
+      "status": 1
+    },
+    {
+      "id_brand": "2",
+      "name": "samsung",
+      "description": null,
+      "logo": "samsungnew-logo-220x48-1.png",
+      "status": 1
+    },
+    {
+      "id_brand": "3",
+      "name": "xiaomi",
+      "description": null,
+      "logo": "logo-xiaomi-220x48-5.png",
+      "status": 1
+    },
+    {
+      "id_brand": "4",
+      "name": "oppo",
+      "description": null,
+      "logo": "OPPO42--logob_5.jpg",
+      "status": 1
+    }
+  ]
+}

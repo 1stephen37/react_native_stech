@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
-import {StyleSheet, View} from "react-native";
+import {StyleSheet, View, TextInput} from "react-native";
 import Logo from "@/components/Logo";
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
 function MainHeader() {
-    const [showMenu, setShowMenu] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
 
-    const handleMobileMenu = () => {
+    const handleSearch = () => {
         console.log(123);
-        setShowMenu(!showMenu);
+        setShowSearch(!showSearch);
     }
 
     return (
         <header style={styles.header}>
             <Logo/>
-            <MaterialCommunityIcons onPress={handleMobileMenu} name="menu" size={24} color="black"/>
-            {showMenu && (
+            <Ionicons onPress={handleSearch} name="search" size={24} color="black"/>
+            {showSearch && (
                 <View style={styles.subMenu}>
-
+                    <TextInput  placeholder="useless placeholder" />
                 </View>
             )}
         </header>
@@ -54,7 +54,14 @@ const styles = StyleSheet.create({
         // height: 100,
         backgroundColor: "rgba(255,255,255,1)",
         color: "black"
-    }
+    },
+    input: {
+        height: 40,
+        margin: 12,
+        borderWidth: 0,
+        padding: 10,
+
+    },
 });
 
 export default MainHeader;
